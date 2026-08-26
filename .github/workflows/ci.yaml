@@ -26,5 +26,5 @@ jobs:
         run: pytest -v
 
       - name: Build da imagem Docker
-        run: docker build -t devops-lab-01:${{ github.sha }} .
+        run: podman build -t devops-lab-01:${{ github.sha }} .
  
