@@ -1,4 +1,4 @@
-from app import soma, saudacao
+from app import soma, saudacao, multiplicacao
 
 def test_soma():
     assert soma(2, 3) == 5
@@ -9,3 +9,5 @@ def test_saudacao():
     assert "Mundo" in resultado
     assert resultado.startswith("Olá")
 
+def test_multiplicacao():
+    assert multiplicacao(2, 3) == 6
